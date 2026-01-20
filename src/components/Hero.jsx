@@ -1,23 +1,31 @@
 export default function Hero() {
   return (
     <section className="py-24">
-      <h1 className="text-4xl font-bold">Urangani Terrence</h1>
+      <h1 className="text-4xl font-bold">Urangani Terrence Mafunzwaini</h1>
 
       <p className="mt-4 text-zinc-400">
-        Software developer
+        Software developer 
       </p>
 
       <div className="mt-6 flex gap-4">
         <a
           href="https://github.com/urangani"
-          className="px-4 py-2 bg-white text-black rounded"
+          className="px-4 py-2 bg-black text-white rounded border border-zinc-700"
         >
           GitHub
         </a>
+    
+        <a
+          href="https://www.linkedin.com/in/urangani-mafunzwaini-470516297"
+          className="px-4 py-2 bg-white text-black border border-zinc-700 rounded"
+        >
+          LinkedIn
+        </a>
+
 
         <a
           href="#projects"
-          className="px-4 py-2 border border-zinc-700 rounded"
+          className="px-4 py-2 border bg-black text-white border-zinc-700 rounded"
         >
           Projects
         </a>
