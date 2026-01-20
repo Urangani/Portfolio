@@ -55,7 +55,7 @@ export default function Skills() {
     <section className="py-16 border-t border-zinc-800">
       <h2 className="text-2xl font-semibold mb-10">Skills</h2>
 
-    <div className="flex flex-wrap gap-2">
+ <div className="flex flex-nowrap gap-4 overflow-x-auto md:flex-wrap scrollbar-hide">
       <CategoryCard title="Programming Languages" items={ProgrammingLangauges}/>
       <CategoryCard title="Frontend Development" items={FrontendSkills}/>
       <CategoryCard title="Backend Development" items={BackendSkills}/>

@@ -3,6 +3,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import WorkExperience from "./components/WorkExprience";
+import Education from "./components/Education";
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
+      <WorkExperience/>
+      <Education/>
       <Footer />
     </div>
   );
