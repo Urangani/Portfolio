@@ -12,6 +12,23 @@
 
 @layer base {
   body {
-    @apply bg-zinc-950 text-zinc-100;
+    @apply bg-primary text-zinc-100;
   }
+}
+
+@theme{
+
+
+    --color-primary: hsl(0,0%,5%);
+    --color-secondary: hsl(0,0%,10%);
+    --color-accent: hsl(0,0%,15%);
+    
+    --color-accent-lighter: hsl(0,0%,50%);
+    --color-border:hsl(0,0%,50%);
+
+    --color-text-primary:hsl(0,0%,95%);
+    --color-text-secondary:hsl(0,0%,70%);
+    
+
+
 }

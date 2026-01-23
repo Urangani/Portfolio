@@ -22,9 +22,9 @@ export default function Projects() {
 
       <div className="mt-6 space-y-6">
         {projects.map((project) => (
-          <div
+          <div 
             key={project.title}
-            className="p-5 border border-zinc-800 rounded"
+            className="p-5 bg-secondary border border-zinc-800 rounded"
           >
             <h3 className="text-xl font-medium">{project.title}</h3>
 
