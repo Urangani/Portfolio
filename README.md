@@ -1,16 +1,45 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio Website
 
-Currently, two official plugins are available:
+## 📌 Overview
+This is my personal portfolio website showcasing my skills, projects, and professional journey. It serves as a central hub where visitors can learn more about my background, explore my work, and get in touch with me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Responsive Design** – Optimized for desktop, tablet, and mobile devices.  
+- **Projects Showcase** – Highlighting selected projects with descriptions, tech stacks, and links.  
+- **About Me Section** – A concise introduction to my background, skills, and interests.  
+- **Contact Form** – Easy way for visitors to reach out.  
+- **Minimalist UI** – Clean, professional, and accessible design.  
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Nodejs
+- **Deployment:** GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+```plaintext
+├── public/          # Static assets
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── pages/       # Main pages (Home, Projects, Contact)
+│   ├── styles/      # Global styles
+│   └── utils/       # Helper functions
+├── .gitignore
+├── README.md
+└── package.json
+```
 
-## Expanding the ESLint configuration
+# 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📈 Future Improvements
+- Add blog section for technical writing.  
+- Integrate analytics for visitor tracking.  
+- Enhance accessibility with ARIA attributes.  
+- White mode toggle for user preference.  
+
+## 📬 Contact
+Feel free to reach out via:  
+- **Email:** www.uranganidc@gmail.com  
+- **LinkedIn:** linkedin.com/in/UranganiMafunzwaini [(linkedin.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Flinkedin.com%2Fin%2Fyour-profile")  
+- **GitHub:** github.com/Urangani [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fyour-username")  
+
