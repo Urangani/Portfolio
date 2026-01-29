@@ -1,14 +1,18 @@
-
 {
-    "education" : [
+  "education": [
     {
       "degree": "Bachelor of Science in Computer Science",
       "institution": "University of Venda",
       "duration": "2022 – 2025",
       "highlights": [
-        "Focused on software engineering, algorithms, and system design.",
-        "Led projects in software development.",
-        "Graduated with strong emphasis on practical problem-solving."
+        "Database Design and Implementation",
+        "Evaluation of Information Systems",
+        "Artificial Intelligence",
+        "Data structures and Advanced algorithms",
+        "Professional Issues in Computing and Informing Technology",
+        "System design and Implementation",
+        "Distributed Operating systems",
+        "Software Engineering"
       ]
     },
     {
@@ -16,8 +20,9 @@
       "institution": "Thohoyandou Technical High School",
       "duration": "2017 – 2021",
       "highlights": [
-        "Excelled Civil Engineering and Engineering Graphics and Design."
+        "Civil Engineering",
+       " Engineering Graphics and Design"
       ]
     }
-]
+  ]
 }

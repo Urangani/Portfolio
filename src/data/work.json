@@ -1,24 +1,24 @@
-  {
-    "experiences":[
+{
+  "experiences": [
     {
-      "role": "Software Development Intern",
-      "company": "Prodigy InfoTech",
-      "duration": "Jan 2026 – Present",
+      "role": "Backend Developer",
+      "company": "Continuum",
+      "duration": "Nov 2025 – Present",
       "details": [
-        "Contributing to real-world projects with a focus on backend and frontend development.",
-        "Collaborating with teams to deliver scalable and maintainable code.",
-        "Refining Git workflows and automation tools for efficiency."
+        "Part of a team building a Freelancer Productivity Platform.",
+        "Developing a clean and unified platform for freelancers, contractors, and small dev teams.",
+        "Features include work tracking, hour logging, task management, client progress sharing, and automated invoice generation."
       ]
     },
     {
-      "role": "Freelance Developer",
-      "company": "Self-Employed",
-      "duration": "2024 – 2025",
+      "role": "Web Developer",
+      "company": "Tech Dev",
+      "duration": "June 2025",
       "details": [
-        "Built responsive web apps using React and Tailwind CSS.",
-        "Customized developer environments for reproducibility and clarity.",
-        "Delivered accessible, semantic web components with ARIA standards."
+        "Worked as part of the Tech Dev team responsible for designing and developing websites for various use cases.",
+        "Contributed to frontend implementation, layout design, and feature development.",
+        "Collaborated with team members to deliver functional, responsive, and maintainable web solutions."
       ]
     }
   ]
-  }
+}

@@ -7,7 +7,7 @@ import Education from "./components/Education";
 
 export default function App() {
   return (
-    <div >
+    <div className="px-10" >
       <Hero />
       <Skills />
       <Projects />
