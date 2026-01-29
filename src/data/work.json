@@ -1,0 +1,24 @@
+  {
+    "experiences":[
+    {
+      "role": "Software Development Intern",
+      "company": "Prodigy InfoTech",
+      "duration": "Jan 2026 – Present",
+      "details": [
+        "Contributing to real-world projects with a focus on backend and frontend development.",
+        "Collaborating with teams to deliver scalable and maintainable code.",
+        "Refining Git workflows and automation tools for efficiency."
+      ]
+    },
+    {
+      "role": "Freelance Developer",
+      "company": "Self-Employed",
+      "duration": "2024 – 2025",
+      "details": [
+        "Built responsive web apps using React and Tailwind CSS.",
+        "Customized developer environments for reproducibility and clarity.",
+        "Delivered accessible, semantic web components with ARIA standards."
+      ]
+    }
+  ]
+  }

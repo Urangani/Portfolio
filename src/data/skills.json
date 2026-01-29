@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": "programming-languages",
+      "title": "Programming Languages",
+      "items": [
+        "Python",
+        "Java",
+        "JavaScript"
+
+      ]
+    },
+    {
+      "id": "frontend-development",
+      "title": "Frontend Development",
+      "items": [
+        "React",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "id": "backend-development",
+      "title": "Backend Development",
+      "items": [
+        "Node.js",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Databases",
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite"
+      ]
+    },
+    {
+      "id": "tools-and-technologies",
+      "title": "Tools & Technologies",
+      "items": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "Languages",
+      "items": [
+        "English",
+        "Tshivenda",
+        "Zulu"
+      ]
+    }
+  ]
+}

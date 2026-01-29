@@ -1,0 +1,17 @@
+{
+    "projects": [
+        {   "id": "student management",
+            "title": "Student Management App",
+            "description": "Tracks attendance, payments, and notes with teacher–parent access.",
+            "stack": "React, FastAPI, SQLite",
+            "link": "#"
+        },
+        {
+            "id": "student management",
+            "title": "Go Down E-commerce Website",
+            "description": "Online store with product listings and a responsive UI.",
+            "stack": "HTML, CSS, JavaScript",
+            "link": "#"
+        }
+    ]
+}
