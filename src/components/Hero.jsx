@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="p-8">
       <section className="flex flex-col gap-8">
-        <h1 className="text-center text-4xl font-bold">
+        <h1 className="text-center text-4xl font-bold ">
         Software Engineer | Developer
       </h1>
 

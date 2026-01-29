@@ -12,16 +12,20 @@
         "Professional Issues in Computing and Informing Technology",
         "System design and Implementation",
         "Distributed Operating systems",
-        "Software Engineering"
+        "Software Engineering",
+        "Physics: Mechanics",
+        "Physics: Thermodynamics",
+        "Integral and differential Calculus"
+
       ]
     },
     {
-      "degree": "High School Diploma",
+      "degree": "High School Bachelor",
       "institution": "Thohoyandou Technical High School",
       "duration": "2017 – 2021",
       "highlights": [
         "Civil Engineering",
-       " Engineering Graphics and Design"
+        "Engineering Graphics and Design"
       ]
     }
   ]
