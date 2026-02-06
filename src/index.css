@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 
+:root{
+
+  font-family: Euclid,sans-serif,Arial,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue;
+
+}
+
+
 /* Hide scrollbar but keep scroll functionality */
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
@@ -15,6 +22,9 @@
     @apply bg-primary text-zinc-100;
   }
 }
+
+
+
 
 @theme{
 
