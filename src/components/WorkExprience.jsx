@@ -5,7 +5,7 @@ const WorkExperience = () => {
 
   return (
     <section className="max-w-3xl mx-auto my-8">
-      <h2 className="text-2xl font-bold text-white mb-6 border-b border-black pb-2">
+      <h2 className="text-2xl font-bold text-white mb-6 border-b border-zinc-500 pb-2 text-center">
         Work Experience
       </h2>
       {work.experiences.map((exp, index) => (

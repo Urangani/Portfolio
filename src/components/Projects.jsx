@@ -5,13 +5,14 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 border-t border-zinc-800">
-      <h2 className="text-2xl font-semibold">Projects</h2>
+      <h2 className="text-2xl font-semibold text-center">Projects</h2>
 
-      <div className="mt-6 space-y-6">
+      <div className="mt-6 space-y-6 flex flex-wrap gap-4 justify-center">
+        
         {projects.projects.map((project) => (
           <div 
             key={project.id}
-            className="p-5 bg-secondary border border-zinc-800 rounded"
+            className="p-5 bg-secondary border border-zinc-800  rounded"
           >
             <h3 className="text-xl font-medium">{project.title}</h3>
 
