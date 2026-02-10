@@ -1,17 +1,33 @@
 {
     "projects": [
-        {   "id": "student management",
-            "title": "Student Management App",
+        {   "id": "class-a",
+            "title": "Class-A",
             "description": "Tracks attendance, payments, and notes with teacher–parent access.",
-            "stack": "React, FastAPI, SQLite",
-            "link": "#"
+            "stack": "React, Springboot",
+            "link": "https://github.com/Urangani/Class-A"
         },
         {
-            "id": "student management",
-            "title": "Go Down E-commerce Website",
-            "description": "Online store with product listings and a responsive UI.",
-            "stack": "HTML, CSS, JavaScript",
-            "link": "#"
+            "id": "stage-slot",
+            "title": "Stage Slot",
+            "description": "Artist Promotion & Booking Platform.",
+            "stack": "React, FastAPI, SQLite",
+            "link": "https://github.com/Urangani/StageSlot"
+        },
+    
+        {
+            "id": "alpha-pilot",
+            "title": "Alpha Pilot",
+            "description": "A locally hostesd productivity software",
+            "stack": "React, SQLite,NodeJs",
+            "link": "https://github.com/Urangani/Alpha-Pilot"
+        },
+        {
+            "id": "bash-scripts",
+            "title": "Bash Scripts",
+            "description": "Custom utility Bash Scripts",
+            "stack": "React, SQLite,NodeJs",
+            "link": "https://github.com/Urangani/bash-scripts"
         }
     ]
+    
 }

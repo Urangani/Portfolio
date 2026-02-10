@@ -1,4 +1,4 @@
-import ProfileImg from "../assets/me.jpg";
+import ProfileImg from "../assets/me.jpeg";
 import { FaGithub, FaLinkedin, FaFolderOpen } from "react-icons/fa";
 
 export default function Hero() {
