@@ -1,78 +1,114 @@
 import ProfileImg from "../assets/me.jpeg";
 import { FaGithub, FaLinkedin, FaFolderOpen } from "react-icons/fa";
-
+import RotatingText from "./RotatingText";
 export default function Hero() {
   return (
-    <div className="pt-8">
-      <section className="flex flex-col gap-8">
-        <h1 className="sm:text-center text-4xl font-bold">
-          Software Engineer <span className="inline-block animate-spin-interval">|</span> Developer
-        </h1>
-
-        <div className="flex flex-col lg:flex-row items-center lg:items-start">
-          <div className="m-5 lg:w-1/2">
-            <h1 className="text-4xl font-bold">
-              Urangani Terrence <br /> Mafunzwaini
-            </h1>
-            <p className="mt-4 text-zinc-400">
-              I am a passionate software developer and engineer with a
-              Bachelor’s degree in Computer Science from the University of
-              Venda.
-            </p>
-
-            <p className="mt-4 text-zinc-400">
-              {" "}
-              I build practical software systems with a focus on clean
-              architecture and scalable solutions. My work is driven by a love
-              for solving everyday problems and creating tools that simplify
-              life’s mundane tasks.
-            </p>
-
-            <p className="mt-4 text-zinc-400">
-              {" "}
-              Beyond code, I am a poet, gamer, and music lover—bringing
-              creativity, curiosity, and rhythm into everything I do. With a
-              strong dedication to software engineering and development, I
-              strive to merge technical excellence with artistic expression.
-            </p>
-          </div>
-
-          {/* Image container */}
-          <div className="m-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm">
-            <img
-              src={ProfileImg}
-              alt="Profile"
-              className="w-full h-auto object-cover rounded-3xl"
-            />
-          </div>
+    <section
+      id="home"
+      className="relative z-10 flex flex-col gap-8 px-6 py-16 max-w-6xl mx-auto"
+    >
+        <Title/>
+        <div className="flex max-sm:flex-col items-center justify-around">
+          <ImageContainer/>
+          <Name/>
         </div>
+         <SmallLinks/>
 
-        <div className="mb-6 flex flex-wrap gap-4 justify-center">
-          <a
-            href="https://github.com/urangani"
-            className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded border border-zinc-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            <FaGithub className="text-xl" />
-            GitHub
-          </a>
+    </section>
+  );
+}
 
-          <a
-            href="https://www.linkedin.com/in/urangani-mafunzwaini-470516297"
-            className="flex items-center gap-2 px-4 py-2 bg-white text-black border border-zinc-700 rounded transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            <FaLinkedin className="text-xl text-black" />
-            LinkedIn
-          </a>
-
-          <a
-            href="#projects"
-            className="flex items-center gap-2 px-4 py-2 border bg-secondary text-white border-zinc-700 rounded transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            <FaFolderOpen className="text-xl" />
-            Projects
-          </a>
+export function ImageContainer(){
+    return(
+      <div className="w-1/3 ">
+          <img
+            src={ProfileImg}
+            alt="Profile"
+            className="object-cover rounded-full hover:shadow-2xl hover:shadow-white/70 transition-all ease-in"
+          />
         </div>
-      </section>
+    )
+}
+
+export function SmallLinks() {
+  return (
+    <>
+      <div className="flex gap-4 flex-wrap justify-center">
+        <SocialLink
+          href="https://github.com/urangani"
+          icon={<FaGithub className="text-xl" />}
+          label="GitHub"
+          className="bg-secondary/50 text-white"
+        />
+
+        <SocialLink
+          href="https://www.linkedin.com/in/urangani-mafunzwaini-470516297"
+          icon={<FaLinkedin className="text-xl" />}
+          label="LinkedIn"
+          className="bg-white text-black"
+        />
+
+        <SocialLink
+          href="#projects"
+          icon={<FaFolderOpen className="text-xl" />}
+          label="Projects"
+          className="bg-secondary/50 text-white"
+        />
+      </div>
+    </>
+  );
+}
+
+export function Name() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+        <span className="block">Urangani Terrence</span>
+        <span className="block">Mafunzwaini</span>
+      </h1>
     </div>
   );
 }
+
+export function SocialLink({ href, icon, label, className }) {
+  return (
+    <a
+      href={href}
+          className={`flex items-center gap-2 
+                  px-2 py-1 text-sm 
+                  sm:px-3 sm:py-2 sm:text-base 
+                  md:px-4 md:py-2 md:text-lg 
+                  lg:px-5 lg:py-3 lg:text-xl 
+                  rounded border border-zinc-700 
+                  hover:scale-105 transition 
+                  ${className}`}
+>
+      {icon}
+      {label}
+    </a>
+  );
+}
+
+export function Title() {
+  return (
+    <>
+      <h1 className="text-center text-4xl max-sm:text-2xl font-bold">
+        Software{" "}
+        <RotatingText
+          texts={["Developer", "Engineer"]}
+          mainClassName="inline-block bg-white text-black rounded-lg p-2"
+          staggerFrom="last"
+          initial={{ y: "100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-120%" }}
+          staggerDuration={0.025}
+          splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+          transition={{ type: "spring", damping: 30, stiffness: 400 }}
+          rotationInterval={4000}
+        />
+      </h1>
+    </>
+  );
+}
+
+

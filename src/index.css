@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
-
 :root{
-
   font-family: Euclid,sans-serif,Arial,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue;
+  --color-primary: hsl(0,0%,5%);
+  --color-secondary: hsl(0,0%,10%);
+  --color-accent: hsl(0,0%,15%);
+  
+  --color-accent-lighter: hsl(0,0%,50%);
+  --color-border:hsl(0,0%,50%);
 
+  --color-text-primary:hsl(0,0%,95%);
+  --color-text-secondary:hsl(0,0%,70%);
+
+    scroll-behavior: smooth;
 }
-
 
 /* Hide scrollbar but keep scroll functionality */
 .scrollbar-hide::-webkit-scrollbar {
@@ -19,41 +26,8 @@
 
 @layer base {
   body {
-    @apply bg-primary text-zinc-100;
+    background-color: var(--color-primary);
+    color: rgb(244, 244, 245);
   }
 }
 
-
-
-
-@theme{
-
-
-    --color-primary: hsl(0,0%,5%);
-    --color-secondary: hsl(0,0%,10%);
-    --color-accent: hsl(0,0%,15%);
-    
-    --color-accent-lighter: hsl(0,0%,50%);
-    --color-border:hsl(0,0%,50%);
-
-    --color-text-primary:hsl(0,0%,95%);
-    --color-text-secondary:hsl(0,0%,70%);
-    
-
-
-}
-
-@layer utilities{
-
-  @keyframes spin-interval {
-    0% {transform: rotate(0deg) translateY(0);}
-    20% {transform: rotate(360deg) translateY(25%);}
-    40% {transform: rotate(360deg) translateY(0);}
-    100% {transform: rotate(360deg) translateY(0);}
-  }
-
-
-  .animate-spin-interval{
-    animation: spin-interval 3s ease-in-out infinite;
-  }
-}

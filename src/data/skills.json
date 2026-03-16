@@ -45,15 +45,6 @@
         "Docker",
         "GitHub Actions"
       ]
-    },
-    {
-      "id": "languages",
-      "title": "Languages",
-      "items": [
-        "English",
-        "Tshivenda",
-        "Zulu"
-      ]
     }
   ]
 }

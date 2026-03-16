@@ -1,35 +1,49 @@
-
-import projects from '../data/projects.json'
+import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
+import projects from "../data/projects.json";
 
 export default function Projects() {
-
   return (
-    <section id="projects" className="py-16 border-t border-zinc-800">
-      <h2 className="text-2xl font-semibold text-center">Projects</h2>
+    <section id="projects" className="py-16 w-fit mx-auto">
+      <h2 className="text-3xl font-bold text-center text-white mb-12">
+        Projects
+      </h2>
 
-      <div className="mt-6 space-y-6 flex flex-wrap gap-4 justify-center">
-        
-        {projects.projects.map((project) => (
-          <div 
+      {/* Bento grid container */}
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-6 w-2/3 mx-auto">
+        {projects.projects.map((project, index) => (
+          <div
             key={project.id}
-            className="p-5 bg-secondary border border-zinc-800  rounded"
+            className={`
+              group relative p-6 bg-gradient-to-br from-zinc-900 to-zinc-800 
+              border border-zinc-700 rounded-xl shadow-lg hover:shadow-xl 
+              hover:border-white transition-all duration-300
+              ${index % 5 === 0 ? "md:col-span-3 md:row-span-2" : "md:col-span-2"}
+            `}
           >
-            <h3 className="text-xl font-medium">{project.title}</h3>
+            {/* Title */}
+            <h3 className="text-xl font-semibold text-white flex items-center gap-2 mb-2">
+              <FaCode className="text-white" />
+              {project.title}
+            </h3>
 
-            <p className="mt-2 text-zinc-400">
-              {project.description}
-            </p>
+            {/* Description */}
+            <p className="mt-2 text-zinc-400">{project.description}</p>
 
-            <p className="mt-2 text-sm text-zinc-500">
-              {project.stack}
-            </p>
+            {/* Tech stack */}
+            <p className="mt-2 text-sm text-zinc-500">{project.stack}</p>
 
+            {/* Link */}
             <a
               href={project.link}
-              className="inline-block mt-3 text-sm underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 text-sm white hover:text-indigo-300 transition-colors"
             >
-              View Project
+              View Project <FaExternalLinkAlt className="w-4 h-4" />
             </a>
+
+            {/* Decorative hover accent */}
+            <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-white transition-all duration-300 pointer-events-none" />
           </div>
         ))}
       </div>
