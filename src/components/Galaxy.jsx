@@ -37,7 +37,7 @@ uniform bool uTransparent;
 
 varying vec2 vUv;
 
-#define NUM_LAYER 4.0
+#define NUM_LAYER 2.0
 #define STAR_COLOR_CUTOFF 0.2
 #define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071)
 #define PERIOD 3.0
@@ -214,8 +214,14 @@ export default function Galaxy({
     let program;
 
     function resize() {
-      const scale = 1;
+      // Reduce internal resolution for better performance (fill rate is the bottleneck)
+      const scale = 0.5;
       renderer.setSize(ctn.offsetWidth * scale, ctn.offsetHeight * scale);
+      
+      // Ensure the canvas stretches to fill the container despite lower internal resolution
+      gl.canvas.style.width = '100%';
+      gl.canvas.style.height = '100%';
+      
       if (program) {
         program.uniforms.uResolution.value = new Color(
           gl.canvas.width,

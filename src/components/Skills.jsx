@@ -68,9 +68,10 @@ const itemMap = {
   GitHub: { node: <FaGithub className="text-4xl text-gray-700" />, href: "https://github.com" },
 };
 
-export default function App() {
+export default function Skills() {
   return (
-    <div className="space-y-12 p-6">
+    <section id="skills" className="py-16 max-w-6xl mx-auto">
+      <div className="space-y-12 p-6">
       {categories.map((category, index) => {
         const logos = category.items.map((item) => ({
           node: itemMap[item].node,
@@ -102,5 +103,6 @@ export default function App() {
         );
       })}
     </div>
+    </section>
   );
 }

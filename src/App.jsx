@@ -39,15 +39,15 @@ export const Background = ({children}) => {
               mouseRepulsion
               mouseInteraction={false}
               density={1}
-              glowIntensity={0.3}
+              glowIntensity={0.2}
               saturation={0}
               hueShift={140}
               twinkleIntensity={0.3}
-              rotationSpeed={0.1}
-              repulsionStrength={2}
+              rotationSpeed={0.06}
+              repulsionStrength={1}
               autoCenterRepulsion={0}
-              starSpeed={0.1}
-              speed={0.2}
+              starSpeed={0.001}
+              speed={0.02}
           />
       </div>
       { children }
