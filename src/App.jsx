@@ -39,10 +39,10 @@ export const Background = ({children}) => {
               mouseRepulsion
               mouseInteraction={false}
               density={1}
-              glowIntensity={0.2}
+              glowIntensity={0.4}
               saturation={0}
               hueShift={140}
-              twinkleIntensity={0.3}
+              twinkleIntensity={0.6}
               rotationSpeed={0.06}
               repulsionStrength={1}
               autoCenterRepulsion={0}
